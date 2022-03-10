@@ -6,8 +6,7 @@ class Item(FileReadAndWrite):
         print("Type something what you want to search")
         product=input('Enter keyword to search : ')
         self.getItemsFileData(product)
-
-    
+  
     def addItemToDB(self):
         
         print('Create new Item')

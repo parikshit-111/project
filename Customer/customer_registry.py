@@ -34,5 +34,4 @@ class Customer(FileReadAndWrite):
         add_to_cart=input('Do you want to add the product to cart? y/n :')
         if add_to_cart.upper()=='Y':
             print(product_description)
-
-   
+ 

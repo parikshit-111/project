@@ -36,7 +36,6 @@ class Admin(FileReadAndWrite):
         self.writeCustomerFileData(path, customer_id,username, first_name,last_name, email, phone, gender,address_type,add_1,city,country,pin)
         searchProducts()
 
-
 def searchProducts():
     print("Type something what you want to search")
     product=input('Enter keyword to search : ')

@@ -25,6 +25,3 @@ while a:
         a=False
     else:
         print("wrong input, try again")
-
-
-

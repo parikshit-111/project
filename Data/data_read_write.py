@@ -34,8 +34,7 @@ class FileReadAndWrite():
             for result in results:
                 a.append(result)
                 print(result)
-            return a   
-            
+            return a              
 
         def writeItemFileData(self,item_name, item_desc,item_category, create_date,brand, brand_email, brand_phone,price):
             data={'item_name':item_name,
