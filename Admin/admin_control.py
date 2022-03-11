@@ -31,15 +31,5 @@ class Admin(FileReadAndWrite):
             find_item=Item()
             find_item.findItemFromDB()
 
-    def register(self,customer_id,username, first_name,last_name, email, phone, gender,address_type,add_1,city,country,pin):
-        path="Customer/Data/{b}_details.json".format(b=username)
-        self.writeCustomerFileData(path, customer_id,username, first_name,last_name, email, phone, gender,address_type,add_1,city,country,pin)
-        searchProducts()
-
-def searchProducts():
-    print("Type something what you want to search")
-    product=input('Enter keyword to search : ')
-    searched_product=Item()
-    searched_product.item_find(product)
 
    

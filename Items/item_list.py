@@ -19,3 +19,10 @@ class Item(FileReadAndWrite):
         brand_phone=input("Enter brand phone: ")
         price=input("Enter price of item: ")
         self.writeItemFileData(item_name, item_desc,item_category, create_date,brand, brand_email, brand_phone,price)
+    
+    def addItemCustomerRating(self,current_session_id,product_desc):
+        
+        cust_id=current_session_id['customer_id']
+        rating=int(input('Enter rating: '))
+        data={"customer_id":cust_id,"rating":rating}
+        self.updateItemFileData(product_desc,data)
